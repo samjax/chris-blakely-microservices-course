@@ -1,0 +1,21 @@
+pipeline{
+    agent any
+    stages{
+        stage("Clean the project"){
+            steps{
+                sh '''
+                echo "Clean project"
+                mvn clean
+                '''
+            }
+        }
+        stage("Build the project"){
+            steps{
+                sh '''
+                echo "Building the project"
+                mvn build
+                '''
+            }
+        }
+    }
+}
