@@ -1,5 +1,6 @@
 package com.pm.patientservice.model;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
@@ -27,7 +28,7 @@ public class Patient {
     @NotNull
     private LocalDate dateOfBirth;
 
-    @NotNull
+    @Nullable
     private LocalDate registerDate;
 
     public UUID getId() {
