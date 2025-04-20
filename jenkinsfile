@@ -8,7 +8,7 @@ pipeline{
             steps{
                 sh '''
                 echo "Clean project"
-                cd patient-management/patient-service
+                cd patient-service
                 mvn clean
                 '''
             }
