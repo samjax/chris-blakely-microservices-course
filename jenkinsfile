@@ -16,9 +16,9 @@ pipeline{
         stage("Build the project"){
             steps{
                 sh '''
-                echo "Building the project"
+                echo "Compile the project"
                 cd patient-service
-                mvn build
+                mvn compile
                 '''
             }
         }
